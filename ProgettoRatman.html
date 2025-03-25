@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Raccolata fumetti RatMan</title>
+    <!-- Importazione font Audiowide -->
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <style type="text/css">
+
+
+
+
+
+/* CSS UGUALE DA QUA*/
+    
+
+    body {
+            font-family: "Audiowide", sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #01031f ;
+        display: flex;
+        flex-direction: column;
+ 
+        justify-content: center;
+       
+        }
+        
+        #conteiner {
+            display:block;
+            align-items: center;
+            background-color: #01031f; /*bluscuro*/
+            padding: 10px;
+              width: 100%;
+          }
+        
+        nav {
+            display: flex;
+              background-color: #c19100; /*grigio*/
+             align-items: center;  
+             width:1600px;     }
+        
+        nav a, .bottone {
+            font-family: "Audiowide", sans-serif;
+            font-weight: bold;
+            color:  #01031f; /*bluscuro*/
+            padding: 4px 20px;
+            text-decoration: none;
+            display: block;
+            background-color: #c19100; /*grigio*/
+            border: none;
+            cursor: pointer;
+            font-weight: 900;
+            font-size: 15px;
+            
+        }
+        
+        nav a:hover, .finestra:hover .bottone {
+            background-color: #970000;
+        }
+        
+        .finestra {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .finestrafine {
+            display: none;
+            position: absolute;
+            background-color: darkblue;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        
+        .finestrafine a {
+            color:#01031f ;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        
+        
+        
+        .finestra:hover .finestrafine {
+            display: block;
+        }
+      
+           
+    #invia {
+    font-family: "Audiowide", sans-serif;
+    font-weight: bold;
+    color: #01031f; /* Blu scuro */
+    background-color: #c19100; /* Giallo */
+    padding: 12px 30px;
+    border: 2px solid;
+    cursor: pointer;
+    border-radius: 5px; /* Arrotondamento angoli */
+    text-align: center;
+    transition: background-color 0.3s red;
+        margin:10px;
+        width: 230px;
+        margin-right: 280px
+}
+
+#invia:hover {
+    
+    background-color: #970000;}
+}
+        img{
+            width: 1530px;
+            gap: 10px;
+        }
+        #icona {
+                    width: 1530px;
+                   height: 560px;
+                    margin-right: 20px;
+                   align-items: center;
+                   justify-content: center;
+               
+ /* CSS UGUALE FINO A QUA*/
+    </style>
+</head>
+<body>
+    <!-- BARRA CON ITEM-->
+    <div id="conteiner">
+        <img src="icona.jpg" alt="Icona Rat-Man">
+        <nav>                
+            <a href="home.html">HOME</a> 
+            <a href="catalogo.html">CATALOGO</a>
+            <a href="login.html">LOGIN</a>
+            <div class="finestra">
+                <button class="bottone">AUTORI</button>
+                <div class="finestrafine">
+                    <a href="#">Creatore</a>
+                    <a href="#">Disegnatore</a>
+                    <a href="#">Editore</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</body>
+</html>
